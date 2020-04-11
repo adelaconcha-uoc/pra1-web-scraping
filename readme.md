@@ -10,7 +10,13 @@ La actividad ha sido realizada de manera individual por **Alejandro De La Concha
 
 ## Ficheros del código fuente
 
-* **coronavirus-ws.py**: contiene el script en Python dedicado a hacer el _Web Scraping_ que a su vez genera el conjunto de datos a partir de la información online [www.worldometers.info](https://www.worldometers.info/coronavirus/). El script busca la tabla de detalle de casos por país, la cual es actualizada cada minuto por el sitio web mencionado.
+* **coronavirus_ws_to_csv.ipynt**: contiene el Notebook en Python dedicado a hacer el _Web Scraping_ que a su vez genera el conjunto de datos a partir de la información online [www.worldometers.info](https://www.worldometers.info/coronavirus/). El script busca la tabla de detalle de casos por país, la cual es actualizada cada minuto por el sitio web mencionado. El script genera un dataframe que después es exportado a un fichero CSV (Comma Separated Value).
+* **coronavirus_ws_to_db.ipynt**: Es casi igual que el fichero anterior con la variante de escribir en una base de datos, en mi caso seleccioné este método para poder visualizar los resultados. Al escribir en una base de datos se puede actualizar en sincronía con la fuente. Haciendo un script que se ejecute cada minuto y sobreescriba los valores en una tabla. También al quedar en una base de datos se pueden hacer cosas interesantes con código SQL como joins con tablas de región y características de los países que nos puedan aportar más profundidad de análisis, en mi caso he utilizado una tabla de países por continente/región para hacer análisis más agergado y también por localización para poder ubicar los datos de la tabla en una visualización tipo mapa.
+
+## Ficheros de datos
+
+* **countries.csv**: contiene un ejemplo de extracción de datos desde el script _coronavirus_ws_to_csv.ipynt_, en este fichero se ha dejado la columna de index del dataframe la cual se podía eliminar en el script o bien en un paso posterior de análisis, decidí dejarla.
+
 
 ## Recursos
 
