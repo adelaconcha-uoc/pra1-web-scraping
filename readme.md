@@ -24,3 +24,8 @@ La actividad ha sido realizada de manera individual por **Alejandro De La Concha
 
 1. Lawson, R. (2015). _Web Scraping with Python_. Packt Publishing Ltd. Chapter 2. Scraping the Data.
 2. Mitchel, R. (2015). _Web Scraping with Python: Collecting Data from the Modern Web_. O'Reilly Media, Inc. Chapter 1. Your First Web Scraper.
+3. Subirats, L., Calvo, M. (2018). Web Scraping. Editorial UOC.
+4. Masip, D. El lenguaje Python. Editorial UOC.
+5. Simon Munzert, Christian Rubba, Peter Meißner, Dominic Nyhuis. (2015).
+6. Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining. John Wiley & Sons.
+7. Tutorial de Github [https://guides.github.com/activities/hello-world](https://guides.github.com/activities/hello-world).
