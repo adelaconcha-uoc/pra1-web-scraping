@@ -82,7 +82,7 @@ df['Total Recovered'] = df['Total Recovered'].str.replace('N/A', '0')
 df.fillna(0, inplace=True)
 
 # cambia los tipos de dato del dataframe, para poder enviar el dataframe eventualmente a una base de datos.
-# en caso de enviarlo a un csv, este paso no tiene tanto impacto, sin embargo si queremos hacer operaciones con el
+# en caso de enviarlo a un csv, este paso no tiene tanto impacto, sin embargo, si queremos hacer operaciones con el
 # dataframe, lo mejor es tener las columas declaradas en el formato correcto:
 
 df = df.astype({"Total Cases": int})
@@ -98,10 +98,10 @@ df = df.astype({"Tot Deaths/1M pop": float})
 # Removemos columnas y líneas no utilizadas
 # es importante señalar que para este caso, he decidido quitar estas columnas, porque el scraping del covid está
 # teniendo mucho movimiento porque al tratarse de un tema de interés mundial, la página fuente altera la tabla constantemente
-# para aportar más información y en nuestra párctica no toda la información es relavante
+# para aportar más información y en nuestra práctica no toda la información es relavante
 
 # elimino 3 columnas que no estaban en el código inicial.
-# en casos futuros, si 
+# en casos futuros, si puede ser necesario conservarlas.
 
 # quita las columnas no utilizadas.
 del df['Total Tests']
